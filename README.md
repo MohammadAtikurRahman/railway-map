@@ -71,7 +71,7 @@ export default App;
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/railway-network.git
+   git clone https://github.com/MohammadAtikurRahman/railway-network.git
    ```
 
 2. Install dependencies:
