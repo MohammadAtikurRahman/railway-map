@@ -1,7 +1,7 @@
 
 # Railway Map
 
-`railway-map` is a React library for visualizing train routes and stations country-wise. It uses OpenRailway or Overpass APIs to fetch and display railway data, allowing customization of station icons and train routes.
+`railway-network` is a React library for visualizing train routes and stations country-wise. It uses OpenRailway or Overpass APIs to fetch and display railway data, allowing customization of station icons and train routes.
 
 ## Features
 - Display train routes and stations for a specified country.
@@ -15,7 +15,7 @@
 Install the package using npm:
 
 ```bash
-npm install railway-map
+npm install railway-network
 ```
 
 ---
@@ -26,7 +26,7 @@ npm install railway-map
 
 ```jsx
 import React from 'react';
-import RailwayMap from 'railway-map';
+import RailwayMap from 'railway-network';
 
 function App() {
     return (
@@ -71,7 +71,7 @@ export default App;
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/railway-map.git
+   git clone https://github.com/yourusername/railway-network.git
    ```
 
 2. Install dependencies:
@@ -97,7 +97,7 @@ For more details on Overpass API, visit [Overpass API Documentation](https://wik
 
 ## Contributions
 
-Contributions, issues, and feature requests are welcome! Feel free to check out the [issues page](https://github.com/MohammadAtikurRahman/railway-map/issues).
+Contributions, issues, and feature requests are welcome! Feel free to check out the [issues page](https://github.com/MohammadAtikurRahman/railway-network/issues).
 
 ---
 
