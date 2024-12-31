@@ -7,28 +7,28 @@ import { terser } from 'rollup-plugin-terser';
 const packageJson = require('./package.json');
 
 export default {
-    input: 'src/index.js', // Entry point
-    output: [
-        {
-            file: packageJson.main,
-            format: 'cjs', // CommonJS
-            sourcemap: true,
-        },
-        {
-            file: packageJson.module,
-            format: 'esm', // ES Module
-            sourcemap: true,
-        },
-    ],
-    plugins: [
-        peerDepsExternal(),
-        resolve(),
-        commonjs(),
-        babel({
-            exclude: 'node_modules/**',
-            babelHelpers: 'bundled',
-            presets: ['@babel/preset-react'],
-        }),
-        terser(),
-    ],
+  input: 'src/index.jsx', // Entry point
+  output: [
+    {
+      file: packageJson.main, // CommonJS output
+      format: 'cjs',
+      sourcemap: true
+    },
+    {
+      file: packageJson.module, // ES Module output
+      format: 'esm',
+      sourcemap: true
+    }
+  ],
+  plugins: [
+    peerDepsExternal(), // Exclude peer dependencies like React from the bundle
+    resolve(), // Resolves node_modules imports
+    commonjs(), // Converts CommonJS modules to ES6
+    babel({
+      exclude: 'node_modules/**', // Do not transpile node_modules
+      babelHelpers: 'bundled',
+      presets: ['@babel/preset-react', '@babel/preset-env'] // React and modern JavaScript support
+    }),
+    terser() // Minify the output
+  ]
 };

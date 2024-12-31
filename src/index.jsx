@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 
 // Component to render train routes and stations
-const RailwayMap = ({ country, stationIcon, apiKey }) => {
+const RailwayNetwork = ({ country, stationIcon, apiKey }) => {
     const [trainRoutes, setTrainRoutes] = useState([]);
     const [stations, setStations] = useState([]);
 
@@ -27,7 +27,7 @@ const RailwayMap = ({ country, stationIcon, apiKey }) => {
 
     return (
         <div>
-            <h1>{country} Railway Map</h1>
+            <h1>{country} Railway Network</h1>
             <svg width="800" height="600" style={{ border: '1px solid black' }}>
                 {/* Render train routes */}
                 {trainRoutes.map((route, index) => (
@@ -65,15 +65,15 @@ const RailwayMap = ({ country, stationIcon, apiKey }) => {
 };
 
 // Prop Types for validation
-RailwayMap.propTypes = {
+RailwayNetwork.propTypes = {
     country: PropTypes.string.isRequired, // Country to display railway routes
     stationIcon: PropTypes.string,        // Custom station icon
     apiKey: PropTypes.string,             // API key for Overpass or OpenRailway (if required)
 };
 
-RailwayMap.defaultProps = {
+RailwayNetwork.defaultProps = {
     stationIcon: null,
     apiKey: '',
 };
 
-export default RailwayMap;
+export default RailwayNetwork;
