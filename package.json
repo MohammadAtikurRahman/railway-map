@@ -1,0 +1,40 @@
+{
+  "name": "railway-map",
+  "version": "1.0.0",
+  "description": "A React library for displaying railway maps",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rollup -c",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["react", "railway", "map", "library"],
+  "author": "Md. Atikur Rahman",
+  "license": "ISC",
+  "peerDependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^28.0.2",
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "rollup": "^2.79.2",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-terser": "^7.0.2",
+    "typescript": "^5.7.2"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MohammadAtikurRahman/railway-map.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MohammadAtikurRahman/railway-map/issues"
+  },
+  "homepage": "https://github.com/MohammadAtikurRahman/railway-map#readme"
+}
